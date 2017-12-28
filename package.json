@@ -1,22 +1,25 @@
 {
-  "name": "syncfusion-chitti",
-  "version": "1.0.0",
-  "description": "Syncfusion Bot Application",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SridharSathaSivam/syncfusion-chitti.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SridharSathaSivam/syncfusion-chitti/issues"
-  },
-  "homepage": "https://github.com/SridharSathaSivam/syncfusion-chitti#readme",
-  "dependencies": {
-    "requirejs": "^2.3.5"
-  }
+    "name": "syncfusion-chitti",
+    "version": "1.0.0",
+    "description": "Syncfusion Bot Application",
+    "main": "index.js",
+    "scripts": {
+        "start": "lite-server -c server.config.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SridharSathaSivam/syncfusion-chitti.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/SridharSathaSivam/syncfusion-chitti/issues"
+    },
+    "homepage": "https://github.com/SridharSathaSivam/syncfusion-chitti#readme",
+    "dependencies": {
+        "requirejs": "^2.3.5"
+    },
+    "devDependencies": {
+        "lite-server": "^2.3.0"
+    }
 }
