@@ -1,31 +1,37 @@
-
+   
 * {
     box-sizing: border-box;
 }
 
-body {
-    background: blue; /* Initial background */
+body{
+    background: linear-gradient(to right, white , white); /* Initial background */
     transition: background .5s; /* .5s how long transitions shoould take */
 }
-/*@keyframes background {
-          0% { background-color: #f99; }
-          33% { background-color: #9f9; }
-          67% { background-color: #99f; }
-          100% { background-color: #f99; }
-        }*/
 
 body {
     font-family: "Calibri", "Roboto", sans-serif;
 }
 
+.imagereader{
+    
+position:absolute;
+top: 25%;
+background: url("../images/supportcat.jpg");
+bottom:0px;
+left:20%;
+height: 280px;
+width:270px;
+background-position: center center;
+background-size:100% 100%;
+}
 .chat_window {
     position: absolute;
-    width: calc(100% - 20px);
-    max-width: 800px;
-    height: 500px;
+    width: 30%;
+    height: 600px;
     border-radius: 10px;
     background-color: #fff;
-    left: 50%;
+    right: -10%;
+    bottom: 0;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
@@ -53,7 +59,7 @@ body {
     list-style: none;
     padding: 20px 10px 0 10px;
     margin: 0;
-    height: 347px;
+    height: 430px;
     overflow: scroll;
 }
 
