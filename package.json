@@ -4,7 +4,8 @@
     "description": "Syncfusion Bot Application",
     "main": "index.js",
     "scripts": {
-        "start": "lite-server -c server.config.js"
+        "start": "lite-server -c server.config.js",
+        "server": "node src/bot/bot-brain.js"
     },
     "repository": {
         "type": "git",
@@ -20,6 +21,7 @@
         "requirejs": "^2.3.5"
     },
     "devDependencies": {
-        "lite-server": "^2.3.0"
+        "lite-server": "^2.3.0",
+        "natural-brain": "0.2.3"
     }
 }
