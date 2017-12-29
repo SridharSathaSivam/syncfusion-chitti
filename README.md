@@ -9,8 +9,10 @@ An AI Bot is a computer program that simulates human conversation through the te
 * Reduce the Incident/Forum count.
 * Ease of customer access as it’s like a normal chatting application.
 * Accepts both voice and text inputs.
-* Can understand human language.
+* Versatile to multiple languages.
 * 24/7 availability to answer for simple customer queries.
+
+
  
  ## Tools & Specification
 
