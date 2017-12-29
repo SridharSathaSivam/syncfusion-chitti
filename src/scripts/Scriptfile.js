@@ -46,9 +46,11 @@ $(function() {
         };
         $('.send_message').click(function(e) {
             var usertext = getMessageText();
-            type = undefined;
-            sendMessage(getMessageText(), 'left');
-            ajaxsend(usertext);
+            if (usertext !== "") {
+                type = undefined;
+                sendMessage(getMessageText(), 'left');
+                ajaxsend(usertext);
+            }
 
         });
 
@@ -71,9 +73,11 @@ $(function() {
         $('.message_input').keyup(function(e) {
             if (e.which === 13) {
                 var usertext = getMessageText();
-                type = undefined;
-                sendMessage(getMessageText(), 'left');
-                ajaxsend(usertext)
+                if (usertext !== "") {
+                    type = undefined;
+                    sendMessage(getMessageText(), 'left');
+                    ajaxsend(usertext);
+                }
             }
         });
     });
