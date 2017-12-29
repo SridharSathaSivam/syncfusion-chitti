@@ -1,127 +1,165 @@
 <html>
-    
+  
+  <body>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+  
     <body>
-      <title>Bootstrap Example</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      </head>
-    
-      <body>
-    
-        <div class="container">
-          <div class="form-group">
+  
+      <div class="container">
+        <div class="form-group">
+          <div class="col-xs-8">
+            <input type="text" class="form-control" id="usr" placeholder="Question...">
+            </br>
+          </div>
+          <div class="dropdown">
             <div class="col-xs-8">
-              <input type="text" class="form-control" id="usr" placeholder="Question...">
-              </br>
-            </div>
-            <div class="dropdown">
-              <div class="col-xs-8">
-                <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Type</button>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                  <li role="presentation">
-                    <a role="menuitem" id="menu1" tabindex="-1" href="#" onclick="yesNo()">Yes/No</a>
-                  </li>
-                  <li role="presentation">
-                    <a role="menuitem" id="menu2" tabindex="-1" href="#" onclick="trueFalse()">True/False</a>
-                  </li>
-                  <li role="presentation">
-                    <a role="menuitem" id="menu3" tabindex="-1" href="#" onclick="textAdd()">Text</a>
-                  </li>
-                  <li role="presentation">
-                    <a role="menuitem" id="menu4" tabindex="-1" href="#" onclick="link()">Link</a>
-                  </li>
-                  <li role="presentation">
-                    <a role="menuitem" id="menu5" tabindex="-1" href="#" onclick="add()">Address</a>
-                  </li>
-                  <li role="presentation">
-                    <a role="menuitem" id="menu6" tabindex="-1" href="#" onclick="dateTime()">Date/Time</a>
-                  </li>
-                  <li role="presentation">
-                    <a role="menuitem" id="menu7" tabindex="-1" href="#" onclick="locationAdd()">Location</a>
-                  </li>
-                  <li role="presentation">
-                    <a role="menuitem" id="menu8" tabindex="-1" href="#" onclick="datRan()">Date Range</a>
-                  </li>
-                
-              </div></br>
-            </div>
-              </br>
-              </br>
+              <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Type</button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                <li role="presentation">
+                  <a role="menuitem" id="menu1" tabindex="-1" href="#" onclick="yesNo()">Yes/No</a>
+                </li>
+                <li role="presentation">
+                  <a role="menuitem" id="menu2" tabindex="-1" href="#" onclick="trueFalse()">True/False</a>
+                </li>
+                <li role="presentation">
+                  <a role="menuitem" id="menu3" tabindex="-1" href="#" onclick="textAdd()">Text</a>
+                </li>
+                <li role="presentation">
+                  <a role="menuitem" id="menu4" tabindex="-1" href="#" onclick="link()">Link</a>
+                </li>
+                <li role="presentation">
+                  <a role="menuitem" id="menu5" tabindex="-1" href="#" onclick="add()">Address</a>
+                </li>
+                <li role="presentation">
+                  <a role="menuitem" id="menu6" tabindex="-1" href="#" onclick="dateTime()">Date/Time</a>
+                </li>
+                <li role="presentation">
+                  <a role="menuitem" id="menu7" tabindex="-1" href="#" onclick="locationAdd()">Location</a>
+                </li>
+                <li role="presentation">
+                  <a role="menuitem" id="menu8" tabindex="-1" href="#" onclick="datRan()">Date Range</a>
+                </li>
               
-    
-              <p id="demo"></p></br></br>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" id="usr3" placeholder="Text..." style="visibility:hidden">
-                </br>
-              </div>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" id="usr4" placeholder="Link..." style="visibility:hidden">
-                </br>
-              </div>
-              <div class="col-xs-8">
-                <textarea rows="4" cols="75" id="usr5" placeholder="Address..." style="visibility:hidden"></textarea>
-                </br>
-                </br>
-              </div>
-              <div class="col-xs-8"> 
-                 <input type="datetime-local" id="usr6" name="datetime" style="visibility:hidden">
-                 </br>
-                 </br>
-              </div>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" id="usr7" placeholder="Location..." style="visibility:hidden">
-              </div>
+            </div></br></br>
+          </div>
+            </br>
+            </br>
+            
+  
+            <p id="demo"></p></br>
+          <div class="dropdown">
+            <div class="col-xs-8">
+              <button class="btn btn-default dropdown-toggle" type="button" id="usr1" data-toggle="dropdown" onclick="option()" style="display:none">Yes/No</button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                <li role="presentation">
+                  <a role="menuitem" id="menu1" tabindex="-1" href="#">Yes</a>
+                </li>
+                <li role="presentation">
+                  <a role="menuitem" id="menu2" tabindex="-1" href="#">No</a>
+                </li>
+          </div>
+        </div>
+          <div class="dropdown">
+            <div class="col-xs-8">
+              <button class="btn btn-default dropdown-toggle" type="button" id="usr2" data-toggle="dropdown" onclick="select()" style="display:none">True/False</button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                <li role="presentation">
+                  <a role="menuitem" id="menu1" tabindex="-1" href="#">True</a>
+                </li>
+                <li role="presentation">
+                  <a role="menuitem" id="menu2" tabindex="-1" href="#">False</a>
+                </li>
+          </div>
+        </div>
+  
+            <div class="col-xs-8">
+              <input type="text" class="form-control" id="usr3" placeholder="Text..." style="display:none">
+              
+            </div>
+            <div class="col-xs-8">
+              <input type="text" class="form-control" id="usr4" placeholder="Link..." style="display:none">
+              
+            </div>
+            <div class="col-xs-8">
+              <textarea rows="4" cols="75" id="usr5" placeholder="Address..." style="display:none"></textarea>
+             
+            </div>
+            <div class="col-xs-8"> 
+               <input type="datetime-local" id="usr6" name="datetime" style="display:none">
+               
+            </div>
+            <div class="col-xs-8">
+              <input type="text" class="form-control" id="usr7" placeholder="Location..." style="display:none">
             </div>
           </div>
-          <script>
-    
-    function hideAllInputs(){
-               document.getElementById("usr1").style.display = "none";
-              document.getElementById("usr2").style.display = "none";
-               document.getElementById("usr3").style.display = "none";
-              document.getElementById("usr4").style.display = "none";
-               document.getElementById("usr5").style.display = "none";
-              document.getElementById("usr6").style.display = "none";
-               document.getElementById("usr7").style.display = "none";
-              document.getElementById("usr8").style.display = "none";
-    }
-    
-            function textAdd() {
-           function hideAllInputs(); {
-              document.getElementById("usr3").style.display = "";
-              document.getElementById("demo").innerHTML = id;
-                 }
+        </div>
+  
+        <script>
+  
+  function hideAllInputs(){
+           document.getElementById("usr1").style.display = "none";
+           document.getElementById("usr2").style.display = "none";
+             document.getElementById("usr3").style.display = "none";
+            document.getElementById("usr4").style.display = "none";
+             document.getElementById("usr5").style.display = "none";
+            document.getElementById("usr6").style.display = "none";
+             document.getElementById("usr7").style.display = "none";
+           // document.getElementById("usr8").style.display = "none";
+  }
+  
+          function textAdd() {
+               hideAllInputs();
+            document.getElementById("usr3").style.display = "";
+            //document.getElementById("demo").innerHTML = id;
                }
-            function link() {
-           function hideAllInputs(); {
-              document.getElementById("usr4").style.display = "";
-              document.getElementById("demo").innerHTML = id;
-              }
+             
+          function link() {
+         hideAllInputs();
+            document.getElementById("usr4").style.display = "";
+            //document.getElementById("demo").innerHTML = id;
             }
-            function add() {
-           function hideAllInputs(); {
-              document.getElementById("usr5").style.display = "";
-              document.getElementById("demo").innerHTML = id;
-              }
+          
+          function add() {
+         hideAllInputs();
+            document.getElementById("usr5").style.display = "";
+            //document.getElementById("demo").innerHTML = id;
             }
-            function dateTime() {
-            function hideAllInputs(); {
-              document.getElementById("usr6").style.display = "";
-              document.getElementById("demo").innerHTML = id;
-            }
+          
+          function dateTime() {
+          hideAllInputs();
+            document.getElementById("usr6").style.display = "";
+            //document.getElementById("demo").innerHTML = id;
           }
-            function locationAdd() {
-              function hideAlInputs(); {
-              document.getElementById("usr7").style.display = "";
-              document.getElementById("demo").innerHTML = id;
-               }
+        
+          function locationAdd() {
+            hideAllInputs(); 
+            document.getElementById("usr7").style.display = "";
+          //  document.getElementById("demo").innerHTML = id;
+             }
+          function option() {
+             document.getElementById("usr1").style.display =""
             }
-    
-    
-          </script>
-      </body>
-    
-    </html>
+          function yesNo() {
+            hideAllInputs();
+             document.getElementById("usr1").style.display =""
+            }
+  
+          function select() {
+             document.getElementById("usr2").style.display =""
+            }
+          function trueFalse() {
+           hideAllInputs();
+             document.getElementById("usr2").style.display =""
+            }
+  
+  
+        </script>
+    </body>
+  
+  </html>
