@@ -42,35 +42,37 @@ $(function() {
             message.draw();
             return $messages.animate({ scrollTop: $messages.prop('scrollHeight') }, 300);
         };
-        $('.send_message').click(function(e) {
-            return sendMessage(getMessageText());
+        $('.send_message').click(function (e) {
+            var usertext = getMessageText();
+            sendMessage(getMessageText());
+            ajaxsend(usertext);
+          
         });
+        function ajaxsend(usertext) {
+            $.ajax({
+                url: 'http://localhost:8000/?chat="' + usertext + '"',
+                dataType: 'text',
+                contentType: 'application/json',
+                type: 'GET',
+                success: function (data) {
+                    debugger
+                    sendMessage(JSON.parse(data).ans);
 
+                },
+                complete: function () {
+                    debugger
+                },
+                error: function () {
+                    debugger
+                },
+
+            });
+        }
         $('.message_input').keyup(function(e) {
             if (e.which === 13) {
                 var usertext = getMessageText();
                 sendMessage(getMessageText());
-                // setTimeout(function() {
-                $.ajax({
-                    url: 'http://localhost:8000/?chat="' + usertext + '"',
-                    dataType: 'text',
-                    contentType: 'application/json',
-                    type: 'GET',
-                    success: function(data) {
-                        debugger
-                        sendMessage(JSON.parse(data).ans);
-
-                    },
-                    complete: function() {
-                        debugger
-                    },
-                    error: function() {
-                        debugger
-                    },
-
-                });
-
-                // }, 1000)
+                ajaxsend(usertext)
             }
         });
     });

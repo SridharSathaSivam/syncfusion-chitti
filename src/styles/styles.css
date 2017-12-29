@@ -94,9 +94,13 @@
    
    .messages .message.left .avatar {
        background-color: #f5886e;
+
        float: left;
    }
-   
+   .messages .message.left .avatar img{
+       width:0!important;
+   }
+
    .messages .message.left .text_wrapper {
        background-color: #ffe6cb;
        margin-left: 20px;
@@ -109,12 +113,14 @@
    }
    
    .messages .message.left .text {
-       color: #c48843;
+       color: black;
+        font-family: cursive;
    }
    
    .messages .message.right .avatar {
-       background-color: #fdbf68;
        float: right;
+       position:relative;
+       background: url("images/chatbot.jpg");
    }
    
    .messages .message.right .text_wrapper {
@@ -123,6 +129,12 @@
        float: right;
    }
    
+     .messages .message.right .avatar img{
+         top: 10px;
+         width:79% !important;
+         left:7px;
+         position:absolute;
+   }
    .messages .message.right .text_wrapper::after,
    .messages .message.right .text_wrapper::before {
        left: 100%;
@@ -131,10 +143,12 @@
    
    .messages .message.right .text {
        color: #45829b;
+       font-family: cursive;
    }
    
    .messages .message.appeared {
        opacity: 1;
+       
    }
    
    .messages .message .avatar {
