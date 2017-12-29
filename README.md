@@ -6,18 +6,18 @@ An AI Bot is a computer program that simulates human conversation through the te
 
 ## Key features/Advantages of AI-BOT
 
-Reduce the Incident/Forum count.
-Ease of customer access as it’s like a normal chatting application.
-Accepts both voice and text inputs.
-Can understand human language.
-24/7 availability to answer for simple customer queries.
+* Reduce the Incident/Forum count.
+* Ease of customer access as it’s like a normal chatting application.
+* Accepts both voice and text inputs.
+* Can understand human language.
+* 24/7 availability to answer for simple customer queries.
  
  ## Tools & Specification
 
-Source Versioning : Git
-Server : Node.js
-Client : JavaScript, HTML, and CSS
-Third party libraries : brain.js, natural-brain
+* Source Versioning : Git
+* Server : Node.js
+* Client : JavaScript, HTML, and CSS
+* Third party libraries : brain.js, natural-brain
 
 ## Running Application 
 
