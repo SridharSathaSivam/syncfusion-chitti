@@ -1,4 +1,5 @@
 {
-    "hi": "Hello!",
-    "Who are you": "I am Syncfusion Bot."
+    "hi": { "ans": "Hello!", "type": "string" },
+    "you name": { "ans": "Syncfusion Bot", "type": "string" },
+    "check": { "ans": "chekcing", "type": "string" }
 }

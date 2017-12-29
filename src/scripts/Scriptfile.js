@@ -48,28 +48,29 @@ $(function() {
 
         $('.message_input').keyup(function(e) {
             if (e.which === 13) {
-                usertext = getMessageText();
+                var usertext = getMessageText();
                 sendMessage(getMessageText());
-                setTimeout(function() {
-                    $.ajax({
-                        url: 'http://localhost:8000/?chat="' + getMessageText() + '"',
-                        dataType: 'text',
-                        type: 'GET',
-                        success: function(data) {
-                            debugger
-                            sendMessage(data);
+                // setTimeout(function() {
+                $.ajax({
+                    url: 'http://localhost:8000/?chat="' + usertext + '"',
+                    dataType: 'text',
+                    contentType: 'application/json',
+                    type: 'GET',
+                    success: function(data) {
+                        debugger
+                        sendMessage(JSON.parse(data).ans);
 
-                        },
-                        complete: function() {
-                            debugger
-                        },
-                        error: function() {
-                            debugger
-                        },
+                    },
+                    complete: function() {
+                        debugger
+                    },
+                    error: function() {
+                        debugger
+                    },
 
-                    });
+                });
 
-                }, 1000)
+                // }, 1000)
             }
         });
     });
