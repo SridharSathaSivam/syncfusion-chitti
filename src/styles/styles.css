@@ -8,8 +8,10 @@
        transition: background .5s;
        /* .5s how long transitions shoould take */
    }
-   
-   body {
+   @media (max-width: 1000px) {
+    .imagetext{display:none;}
+}
+   /*body {
        font-family: "Calibri", "Roboto", sans-serif;
        background: rgba(255, 255, 255, 1);
        background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(107, 107, 107, 1) 100%);
@@ -24,11 +26,18 @@
        right: 0px;
        top: 0px;
        bottom: 0px;
+   }*/
+   .text h1{
+       font-family: "open sans";
+       font-weight:700;
+       letter-spacing:-.01em;
+       text-align:center;
+      margin-bottom:15px;
    }
    
    .imagereader {
        position: absolute;
-       top: 25%;
+       top: 15%;
        background: url("images/supportcat.jpg");
        bottom: 0px;
        left: 20%;
@@ -40,12 +49,12 @@
    
    .chat_window {
        position: absolute;
-       width: 30%;
-       height: 600px;
+       height: 500px;
        border-radius: 10px;
        background-color: #fff;
+       width: 60%;
+       max-width: 400px;
        right: -10%;
-       bottom: 0;
        top: 50%;
        transform: translateX(-50%) translateY(-50%);
        box-shadow: 0px 1px 20px 15px rgba(0, 0, 0, 0.28);
@@ -71,8 +80,8 @@
        list-style: none;
        padding: 20px 10px 0 10px;
        margin: 0;
-       height: 430px;
-       overflow: scroll;
+       height: 347px;
+       overflow-x: hidden;
    }
    
    .messages .message {
@@ -184,7 +193,7 @@
        height: 50px;
        border-radius: 25px;
        border: 1px solid #bcbdc0;
-       width: calc(100% - 160px);
+       width: 76%;
        position: relative;
        padding: 0 20px;
    }
@@ -200,11 +209,11 @@
    }
    
    .bottom_wrapper .send_message {
-       width: 140px;
+       width: 65px;
        height: 50px;
        display: inline-block;
        border-radius: 50px;
-       background-color: red;
+       background-color: green;
        border: 2px solid #a3d063;
        color: #fff;
        cursor: pointer;
