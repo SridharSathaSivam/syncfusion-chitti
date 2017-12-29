@@ -8,7 +8,7 @@
        transition: background .5s;
        /* .5s how long transitions shoould take */
    }
-   @media (max-width: 600px) {
+   @media (max-width: 1000px) {
     .imagetext{display:none;}
 }
    /*body {
@@ -80,8 +80,8 @@
        list-style: none;
        padding: 20px 10px 0 10px;
        margin: 0;
-       height: 430px;
-       overflow: scroll;
+       height: 347px;
+       overflow-x: hidden;
    }
    
    .messages .message {
