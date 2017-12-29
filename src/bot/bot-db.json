@@ -1,5 +1,5 @@
 {
-    "hi hello hai hey hii": {
+    "hi hey hello hii ": {
         "ans": "Hi!How can I help you?",
         "type": "string"
     },
@@ -15,10 +15,7 @@
         "ans": "https://help.syncfusion.com/js/grid/overview",
         "type": "url"
     },
-    "filter searching DropDownList editType  column": {
-        "ans": "https://www.syncfusion.com/kb/8249/how-to-enable-filter-searching-in-dropdownlist-edittype-on-grid-column-while-editing",
-        "type": "url"
-    },
+
     "customizegrid appearance using custom CSS": {
         "ans": "https: //www.syncfusion.com/kb/5172/how-to-customize-grid-appearance-using-custom-css",
         "type": "url"
@@ -39,10 +36,7 @@
         "ans": "https://help.syncfusion.com/js/cdn",
         "type": "url"
     },
-    " bind  Child datasource  ajaxcall": {
-        "ans": "https: //www.syncfusion.com/kb/4713/how-to-bind-the-child-grid-datasource-through-ajax-call",
-        "type": "url"
-    },
+
     " change column datasource dynamically": {
         "ans": "https: //www.syncfusion.com/kb/5025/how-to-change-columns-datasource-dynamically",
         "type": "url"
@@ -87,29 +81,11 @@
         "ans": "https://www.syncfusion.com/kb/7507/how-to-display-headertemplate-value-in-column-chooser",
         "type": "url"
     },
-    "Edit title editform customizeedit": {
-        "ans": "https://www.syncfusion.com/kb/7484/how-to-customize-the-edit-form-title-of-the-grid",
-        "type": "url"
-    },
-    "Group  Format": {
-        "ans": "https://www.syncfusion.com/kb/7176/how-to-group-a-column-based-on-format",
-        "type": "url"
-    },
+
     "show color picker EditMode": {
         "ans": "https://www.syncfusion.com/kb/7174/how-to-render-syncfusion-colorpicker-control-for-particular-column-while-editing-a-record",
         "type": "url"
-    },
-    "Excel filtering grouped columns": {
-        "ans": "https://www.syncfusion.com/kb/7175/how-to-do-excel-filtering-for-the-grouped-columns-when-showgroupedcolumn-is-false",
-        "type": "url"
-    },
-    "destroy autocomplete dialog": {
-        "ans": "https://www.syncfusion.com/kb/7239/how-to-destroy-autocomplete-in-menu-filter-dialog",
-        "type": "url"
-    },
-    "set primarykey readonly  adding": {
-        "ans": "https://www.syncfusion.com/kb/7411/how-to-set-primary-key-column-as-read-only-on-adding",
-        "type": "url"
     }
+
 
 }
