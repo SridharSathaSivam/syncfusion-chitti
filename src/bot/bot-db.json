@@ -1,5 +1,87 @@
 {
-    "hi": { "ans": "Hello!", "type": "string" },
-    "you name": { "ans": "Syncfusion Bot", "type": "string" },
-    "check": { "ans": "chekcing", "type": "string" }
+    "hi hello hai hey hii": {
+        "ans": "Hi!How can I help you?",
+        "type": "string"
+    },
+    "name yourname botname ": {
+        "ans": "Syncfusion Bot",
+        "type": "string"
+    },
+    "Search operation WebAPI service": {
+        "ans": "https://www.syncfusion.com/kb/8251/search-operation-using-webapi-service",
+        "type": "url"
+    },
+    "grid ejgrid mvcgrid syncfusiongrid aspgrid": {
+        "ans": "https://help.syncfusion.com/js/grid/overview",
+        "type": "url"
+    },
+    "filter searching DropDownList editType Grid column": {
+        "ans": "https://www.syncfusion.com/kb/8249/how-to-enable-filter-searching-in-dropdownlist-edittype-on-grid-column-while-editing",
+        "type": "url"
+    },
+    "customizegrid appearance using custom CSS": {
+        "ans": "https: //www.syncfusion.com/kb/5172/how-to-customize-grid-appearance-using-custom-css",
+        "type": "url"
+    },
+    "ReleaseNotes upcoming release latest": {
+        "ans": "https://help.syncfusion.com/js/release-notes/v15.4.0.20?type=all",
+        "type": "url"
+    },
+    "Syncfusion product downloads": {
+        "ans": "https://www.syncfusion.com/products/whatsnewy",
+        "type": "url"
+    },
+    "CSG generator custom": {
+        "ans": "https://help.syncfusion.com/js/custom-script-generator",
+        "type": "url"
+    },
+    "syncfusion products": {
+        "ans": "https://www.syncfusion.com/sales/products",
+        "type": "url"
+    },
+    "cdn link": {
+        "ans": "https://help.syncfusion.com/js/cdn",
+        "type": "url"
+    },
+    " bind  Child datasource  ajaxcall": {
+        "ans": "https: //www.syncfusion.com/kb/4713/how-to-bind-the-child-grid-datasource-through-ajax-call",
+        "type": "url"
+    },
+    " change column datasource dynamically": {
+        "ans": "https: //www.syncfusion.com/kb/5025/how-to-change-columns-datasource-dynamically",
+        "type": "url"
+    },
+    "export  Grid  AngularJS": {
+        "ans": "https: //www.syncfusion.com/kb/5040/how-to-export-the-grid-in-angularjs",
+        "type": "url"
+    },
+    "filtercolumn  customized notcontains operator": {
+        "ans": "https://www.syncfusion.com/kb/7998/how-to-filter-the-grid-string-column-using-customized-notcontains-operator",
+        "type": "url"
+    },
+    "change  scroller size": {
+        "ans": "https://www.syncfusion.com/kb/7781/how-to-change-the-scroller-size-inside-the-ejgrid",
+        "type": "url"
+    },
+    "update headerText  rendered ": {
+        "ans": "https://www.syncfusion.com/kb/7762/how-to-update-headertext-for-rendered-grid",
+        "type": "url"
+    },
+    "apply different Background color  groupcaption": {
+        "ans": "https://www.syncfusion.com/kb/8249/how-to-enable-filter-searching-in-dropdownlist-edittype-on-grid-column-while-editing",
+        "type": "url"
+    },
+    "IsIdentity autoincrement identity primary": {
+        "ans": "https://www.syncfusion.com/kb/7732/how-to-return-data-from-server-while-performing-crud-operation-if-isidentity-column-is-defined",
+        "type": "url"
+    },
+    "customize  controls  menu filter dialog": {
+        "ans": "https://www.syncfusion.com/kb/7723/how-to-customize-the-controls-inside-menu-filter-dialog",
+        "type": "url"
+    },
+    "print printing canvas control barcode PrintGrid": {
+        "ans": "https://www.syncfusion.com/kb/7627/how-to-print-the-syncfusion-canvas-control-such-as-barcode-by-using-printgrid",
+        "type": "url"
+    }
+
 }

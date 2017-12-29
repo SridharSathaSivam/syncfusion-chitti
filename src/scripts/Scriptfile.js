@@ -17,62 +17,62 @@ $(function() {
         return this;
     };
     $(function() {
-        var getMessageText, message_side, sendMessage, usertext;
-        
+        var getMessageText, message_side, sendMessage, usertext, type;
+
         getMessageText = function() {
             var $message_input;
             $message_input = $('.message_input');
             return $message_input.val();
         };
-        sendMessage = function (text, side) {
-            debugger;
+        sendMessage = function(text, side) {
             var $messages, message;
             if (text.trim() === '') {
                 return;
             }
             $('.message_input').val('');
             $messages = $('.messages');
+            if (type == "url") {
+                var exp = /(\b(https?|ftp|file):\/\/([-A-Z0-9+&@#%?=~_|!:,.;]*)([-A-Z0-9+&@#%?\/=~_|!:,.;]*)[-A-Z0-9+&@#\/%=~_|])/ig;
+                var text = text.replace(exp, "Here you go, <a href='$1' target='_blank'>$3</a>");
+            } else
+                text = text;
             message_side = side ? side : 'right';
-            var exp = /(\b(https?|ftp|file):\/\/([-A-Z0-9+&@#%?=~_|!:,.;]*)([-A-Z0-9+&@#%?\/=~_|!:,.;]*)[-A-Z0-9+&@#\/%=~_|])/ig;
-            var text = text.replace(exp, "<a href='$1' target='_blank'>$3</a>");
             message = new Message({
                 text: text,
                 message_side: message_side
             });
-
             message.draw();
             return $messages.animate({ scrollTop: $messages.prop('scrollHeight') }, 300);
         };
-        $('.send_message').click(function (e) {
+        $('.send_message').click(function(e) {
             var usertext = getMessageText();
-            sendMessage(getMessageText(),'left');
+            type = undefined;
+            sendMessage(getMessageText(), 'left');
             ajaxsend(usertext);
-          
+
         });
+
         function ajaxsend(usertext) {
             $.ajax({
                 url: 'http://localhost:8000/?chat="' + usertext + '"',
                 dataType: 'text',
                 contentType: 'application/json',
                 type: 'GET',
-                success: function (data) {
-                    debugger
+                success: function(data) {
+                    type = JSON.parse(data).type;
                     sendMessage(JSON.parse(data).ans);
 
                 },
-                complete: function () {
-                    debugger
-                },
-                error: function () {
-                    debugger
-                },
+                complete: function() {},
+                error: function() {},
 
             });
         }
         $('.message_input').keyup(function(e) {
             if (e.which === 13) {
                 var usertext = getMessageText();
-                sendMessage(getMessageText(),'left');
+                type = undefined;
+                sendMessage(getMessageText(), 'left');
                 ajaxsend(usertext)
             }
         });
