@@ -18,20 +18,21 @@ $(function() {
     };
     $(function() {
         var getMessageText, message_side, sendMessage, usertext;
-        message_side = 'right';
+        
         getMessageText = function() {
             var $message_input;
             $message_input = $('.message_input');
             return $message_input.val();
         };
-        sendMessage = function(text) {
+        sendMessage = function (text, side) {
+            debugger;
             var $messages, message;
             if (text.trim() === '') {
                 return;
             }
             $('.message_input').val('');
             $messages = $('.messages');
-            message_side = message_side === 'left' ? 'right' : 'left';
+            message_side = side ? side : 'right';
             var exp = /(\b(https?|ftp|file):\/\/([-A-Z0-9+&@#%?=~_|!:,.;]*)([-A-Z0-9+&@#%?\/=~_|!:,.;]*)[-A-Z0-9+&@#\/%=~_|])/ig;
             var text = text.replace(exp, "<a href='$1' target='_blank'>$3</a>");
             message = new Message({
@@ -44,7 +45,7 @@ $(function() {
         };
         $('.send_message').click(function (e) {
             var usertext = getMessageText();
-            sendMessage(getMessageText());
+            sendMessage(getMessageText(),'left');
             ajaxsend(usertext);
           
         });
@@ -71,7 +72,7 @@ $(function() {
         $('.message_input').keyup(function(e) {
             if (e.which === 13) {
                 var usertext = getMessageText();
-                sendMessage(getMessageText());
+                sendMessage(getMessageText(),'left');
                 ajaxsend(usertext)
             }
         });
