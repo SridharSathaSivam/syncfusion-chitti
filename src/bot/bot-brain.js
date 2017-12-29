@@ -25,3 +25,5 @@ http.createServer(function(req, res) {
         res.end(output);
     }
 }).listen(8000);
+
+console.log('AI Bot is Running...');
